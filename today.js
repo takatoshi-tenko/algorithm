@@ -12,3 +12,14 @@ function diffDate(tYear, tMonth, tDay) {
   return result
 }
 
+// 今日の日付表示
+function today() {
+  const today = new Date()
+  const year = today.getFullYear()
+  const month = today.getMonth()
+  const date = today.getDate()
+  const dayName = ['日', '月', '火', '水', '木', '金', '土',]
+  const day = today.getDay()
+  return `${year}年${month + 1}月${date}日 (${dayName[day]})`
+}
+
