@@ -23,3 +23,7 @@ function today() {
   return `${year}年${month + 1}月${date}日 (${dayName[day]})`
 }
 
+
+window.addEventListener('load', () => {
+  document.querySelector('.today').innerHTML = today()
+})
