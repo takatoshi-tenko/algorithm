@@ -23,6 +23,12 @@ function today() {
   return `${year}年${month + 1}月${date}日 (${dayName[day]})`
 }
 
+let date = document.querySelector(`input[type="date"][name="date"]`)
+date.addEventListener('change', () => {
+  const [tYear, tMonth, tDate] = date.value.split('-')
+  const leftDay = diffDate(tYear, tMonth, tDate)
+  document.querySelector('.leftDay').innerHTML = ` ${leftDay} `
+})
 
 window.addEventListener('load', () => {
   document.querySelector('.today').innerHTML = today()
