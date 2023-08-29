@@ -12,7 +12,7 @@
     }
   ],
   "liveSassCompile.settings.includeItems": [
-    "/alligator/assets/scss/style.scss"
+    "/alligator/assets/css/style.scss"
   ],
   "liveSassCompile.settings.generateMap": false
 }
