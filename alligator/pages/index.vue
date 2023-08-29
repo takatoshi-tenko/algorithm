@@ -4,5 +4,20 @@
     <p class="today">today</p>
     <p>目標の日付：<input type="date" name="date" /></p>
     <p>入力した日付まで後<span class="leftDay"></span>日</p>
+    <button @click="enableCustomLayout">Update Layout</button>
+    <button @click="handleClick">Coupon Get</button>
+    <LazyCoupon v-if="show" />
   </div>
 </template>
+
+<script setup>
+const route = useRoute();
+const enableCustomLayout = () => {
+  route.meta.layout = "custom";
+};
+const show = ref(false);
+
+const handleClick = () => {
+  show.value = true;
+};
+</script>
