@@ -1,0 +1,7 @@
+$breakpoints: ("xl": "screen and (min-width: 1065px)");
+
+@mixin mq($breakpoint: xl) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
