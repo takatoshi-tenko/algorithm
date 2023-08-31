@@ -7,11 +7,17 @@
     <button @click="enableCustomLayout">Update Layout</button>
     <button @click="handleClick">Coupon Get</button>
     <LazyCoupon v-if="show" />
+    <div>
+      <p>Count: {{ count }}</p>
+      <button @click="() => inc()">increase</button>
+      <button @click="() => dec()">decrease</button>
+    </div>
   </div>
 </template>
 
 <script setup>
 const route = useRoute();
+const { count, inc, dec } = useCounter(100);
 const enableCustomLayout = () => {
   route.meta.layout = "custom";
 };
