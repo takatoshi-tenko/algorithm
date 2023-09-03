@@ -1,10 +1,15 @@
 <script setup>
-const {
-  data: posts,
-  error,
-  refresh,
-} = await useFetch("https://jsonplaceholder.typicode.com/posts/");
-console.log(error.value, "error");
+// const {
+//   data: posts,
+//   error,
+//   refresh,
+// } = await useFetch("https://jsonplaceholder.typicode.com/posts/");
+// console.log(error.value, "error");
+const { data: posts, error } = await useAsyncData("posts", () => {
+  console.log("fetch");
+  return $fetch("https://jsonplaceholder.typicode.com/posts/");
+});
+console.log(useNuxtApp().payload.data);
 </script>
 
 <template>
