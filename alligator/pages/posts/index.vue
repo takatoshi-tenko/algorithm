@@ -3,7 +3,9 @@
     data: posts,
     error,
     pending,
-  } = await useLazyFetch('https://jsonplaceholder.typicode.com/posts/');
+  } = await useLazyAsyncData('posts', () =>
+    $fetch('https://jsonplaceholder.typicode.com/posts/')
+  );
 </script>
 <template>
   <div>
