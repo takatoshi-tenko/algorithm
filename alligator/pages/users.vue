@@ -1,11 +1,11 @@
 <template>
   <div>
     <h1>Usersページ</h1>
-    <p>Count: {{ counter }}</p>
-    <NuxtPage />
+    <NuxtErrorBoundary>
+      <NuxtPage />
+      <template>
+        <p>{{ error }}</p>
+      </template>
+    </NuxtErrorBoundary>
   </div>
 </template>
-
-<script setup>
-const counter = useCounter();
-</script>
