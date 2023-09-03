@@ -18,4 +18,5 @@ export default defineNuxtConfig({
       path: "~/components",
     },
   ],
+  modules: ["@nuxtjs/tailwindcss"],
 });
