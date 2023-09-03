@@ -838,6 +838,11 @@
   "resolved" "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.21.tgz"
   "version" "1.0.0-next.21"
 
+"@prisma/engines@5.2.0":
+  "integrity" "sha512-dT7FOLUCdZmq+AunLqB1Iz+ZH/IIS1Fz2THmKZQ6aFONrQD/BQ5ecJ7g2wGS2OgyUFf4OaLam6/bxmgdOBDqig=="
+  "resolved" "https://registry.npmjs.org/@prisma/engines/-/engines-5.2.0.tgz"
+  "version" "5.2.0"
+
 "@rollup/plugin-alias@^5.0.0":
   "integrity" "sha512-l9hY5chSCjuFRPsnRm16twWBiSApl2uYFLsepQYwtBuAxNMQ/1dJqADld40P0Jkqm65GRTLy/AC6hnpVebtLsA=="
   "resolved" "https://registry.npmjs.org/@rollup/plugin-alias/-/plugin-alias-5.0.0.tgz"
@@ -5554,6 +5559,13 @@
   "integrity" "sha512-mQUvGU6aUFQ+rNvTIAcZuWGRT9a6f6Yrg9bHs4ImKF+HZCEK+plBvnAZYSIQztknZF2qnzNtr6F8s0+IuptdlQ=="
   "resolved" "https://registry.npmjs.org/pretty-bytes/-/pretty-bytes-6.1.1.tgz"
   "version" "6.1.1"
+
+"prisma@^5.2.0":
+  "integrity" "sha512-FfFlpjVCkZwrqxDnP4smlNYSH1so+CbfjgdpioFzGGqlQAEm6VHAYSzV7jJgC3ebtY9dNOhDMS2+4/1DDSM7bQ=="
+  "resolved" "https://registry.npmjs.org/prisma/-/prisma-5.2.0.tgz"
+  "version" "5.2.0"
+  dependencies:
+    "@prisma/engines" "5.2.0"
 
 "proc-log@^3.0.0":
   "integrity" "sha512-++Vn7NS4Xf9NacaU9Xq3URUuqZETPsf8L4j5/ckhaRYsfPeRyzGw+iDjFhV/Jr3uNmTvvddEJFWh5R1gRgUH8A=="
