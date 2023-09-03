@@ -1,5 +1,13 @@
 <template>
-  <div>about page</div>
+  <div>
+    <html lang="ja">
+      <head>
+        <title>Aboutページ</title>
+        <meta name="description" content="Aboutページ" />
+      </head>
+    </html>
+    <h1>About Page</h1>
+  </div>
 </template>
 
 <script setup>
