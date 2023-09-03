@@ -12,14 +12,16 @@
       <button @click="() => inc()">increase</button>
       <button @click="() => dec()">decrease</button>
     </div>
-    <h2>{{ $hello('World') }}</h2>
+    <h2>{{ $hello("World") }}</h2>
+    <h2>{{ data }}</h2>
   </div>
 </template>
 
 <script setup>
 const route = useRoute();
 const { count, inc, dec } = useCounter(100);
-const { $hello } = useNuxtApp()
+const { $hello } = useNuxtApp();
+const { data } = useFetch("api/hello");
 const enableCustomLayout = () => {
   route.meta.layout = "custom";
 };

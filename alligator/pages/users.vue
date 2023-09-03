@@ -1,6 +1,11 @@
 <template>
   <div>
     <h1>Usersページ</h1>
-    <NuxtPage />
+    <NuxtErrorBoundary>
+      <NuxtPage />
+      <template>
+        <p>{{ error }}</p>
+      </template>
+    </NuxtErrorBoundary>
   </div>
 </template>
